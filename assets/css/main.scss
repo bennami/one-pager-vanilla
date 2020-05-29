@@ -8,29 +8,45 @@
 .carousel-container {
   width: 100vw;
   height: 100vh;
+  margin-bottom: 20vh;
 
   .arrows {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     margin: 2vw;
     color: #ffffff;
     position: absolute;
     top: 50%;
     margin-top: -31px;
+    cursor: pointer;
+
+    svg:hover {
+      path {
+        fill: #e09f3e;
+      }
+    }
+
+    path {
+      fill: #fff;
+    }
   }
 
   .prev {
-    border-bottom: 6px solid;
-    border-left: 6px solid;
-    transform: rotate(45deg);
     left: 10px;
   }
 
   .next {
-    border-bottom: 6px solid;
-    border-left: 6px solid;
-    transform: rotate(-135deg);
     right: 10px;
+  }
+
+  .down {
+    top: 90%;
+    left: 48.6%;
+    margin: 0 auto;
+
+    path {
+      fill: #bb9457;
+    }
   }
 
   .imgSlide {
@@ -38,13 +54,15 @@
     background-position: center;
     background-repeat: no-repeat;
     height: inherit;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     h1 {
       color: #ffffff;
-      font-style: 2rem;
+      font-size: 3rem;
+      text-align: center;
+      padding-top: 43vh;
     }
   }
 
@@ -61,10 +79,10 @@
   }
 }
 
-main {
+.tabs {
   display: flex;
   width: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 20vh auto;
   padding: 2vw;
   background-color: #fefdf5;
 
