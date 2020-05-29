@@ -26,10 +26,6 @@ tabButtons.forEach(node =>{
     })
 });
 
-
-
-
-
 //on load show first
 window.addEventListener("load",function () {
     tabContents[0].classList.add('active');
