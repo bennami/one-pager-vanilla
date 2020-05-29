@@ -1,23 +1,26 @@
-let tabButtons = document.querySelectorAll(".tab-btn");
-let tabButton = document.querySelector(".tab-btn");
-let parent = document.getElementById("parent")
+let tabButtons = document.querySelectorAll("[data-tab-target]");
+let  tabContent = document.querySelectorAll("[data-tab-target]");
 
-//console.log(tabButtons, tabContent);
 
-    tabButtons.forEach(node =>{
-         node.addEventListener("click",function () {
-             tabButtons.forEach(node =>{
-                 node.classList.remove("btn-active");
-             })
 
-            node.classList.add("btn-active");
-         })
+
+
+tabButtons.forEach(node=> {
+    node.addEventListener("click", function () {
+        const target = document.querySelector(node.dataset.tabTarget)
+        target.style.display = "block";
     });
+})
+
+
+
 
 //toggle between the tab content
+window.addEventListener("load",function () {
+tabContent.forEach(node =>{
+    node.style.display="none"
+    tabContent[0].style.display="block";
+})
+})
 
 
-tabButton.addEventListener("click", function () {
-    tabButtons.style=".btn-active"
-
-});
