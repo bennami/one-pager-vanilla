@@ -10,8 +10,8 @@
   height: 100vh;
 
   .arrows {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     margin: 2vw;
     color: #ffffff;
     position: absolute;
@@ -31,18 +31,6 @@
     border-left: 6px solid;
     transform: rotate(-135deg);
     right: 10px;
-  }
-
-  ul {
-    height: inherit;
-    display: flex;
-    flex-wrap: nowrap;
-    li {
-      height: inherit;
-      list-style-type: none;
-      height: 100vh;
-      width: 100vw;
-    }
   }
 
   .imgSlide {
@@ -102,21 +90,15 @@ main {
             padding:10px;
             border: none;
             background-color: transparent;
-    
-          a {
-            display: block;
+            display: inline-block;
             font-size: 1rem;
             text-decoration: none;
             color: lightgrey;
-          }
         }
 
         .btn-active {
             border-bottom: 6px solid #c27a3a;
-
-            a {
-                color: #c27a3a;
-            }
+            color: #c27a3a;
         }
 
     }
