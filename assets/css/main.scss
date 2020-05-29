@@ -8,6 +8,31 @@
 .carousel-container {
     width: 100vw;
     height: 100vh;
+
+    .arrows {
+        width: 48px;
+        height: 48px;
+        margin: 2vw;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        margin-top: -31px;
+     }
+     
+     .prev {
+        border-bottom: 6px solid;
+        border-left: 6px solid;
+        transform: rotate(45deg);
+        left: 10px;
+     }
+     
+     .next {
+        border-bottom: 6px solid;
+        border-left: 6px solid;
+        transform: rotate(-135deg);
+        right: 10px;
+     }
+
     ul {
         height: inherit;
         display: flex;
@@ -32,31 +57,6 @@
         h1 {
             color: #ffffff;
         }
-
-        .arrows {
-    
-            width: 48px;
-            height: 48px;
-            margin: 2vw;
-            color: #ffffff;
-            position: absolute;
-            top: 50%;
-            margin-top: -31px;
-         }
-         
-         .prev {
-            border-bottom: 6px solid;
-            border-left: 6px solid;
-            transform: rotate(45deg);
-            left: 10px;
-         }
-         
-         .next {
-            border-bottom: 6px solid;
-            border-left: 6px solid;
-            transform: rotate(-135deg);
-            right: 10px;
-         }
     }
 
     #img1 {
