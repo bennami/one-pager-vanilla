@@ -12,11 +12,11 @@ function reset() {
 
 //call the reset, and only show first one
 function startSlide() {
+    //first you hide them all
     reset();
-    //show one slide at the time
+    //then, show the first image
     sliderImgs[0].style.display = 'block';
 }
-
 
 //show prev
 function  slideLeft() {
