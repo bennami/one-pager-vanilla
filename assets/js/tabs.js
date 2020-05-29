@@ -1,26 +1,40 @@
-let tabButtons = document.querySelectorAll("[data-tab-target]");
-let  tabContent = document.querySelectorAll("[data-tab-target]");
+let tabButtons = document.querySelectorAll('[data-tab-target]');
+let  tabContents = document.querySelectorAll("[data-tab-content]");
 
 
+//toggle  tab content
+tabButtons.forEach(node  => {
 
-
-
-tabButtons.forEach(node=> {
     node.addEventListener("click", function () {
-        const target = document.querySelector(node.dataset.tabTarget)
-        target.style.display = "block";
+        let tab = document.querySelector(node.dataset.tabTarget);
+        tabContents.forEach(tab  => tab.classList.remove('active'));
+        tab.classList.add('active');
     });
-})
+});
+
+//remove active style on tabs
+function resetActiveTab(){
+    tabButtons.forEach(node =>{
+        node.classList.remove("btn-active");
+    })
+}
+
+tabButtons.forEach(node =>{
+    node.addEventListener("click",function () {
+       resetActiveTab();
+       node.classList.add("btn-active");
+    })
+});
 
 
 
 
-//toggle between the tab content
+
+//on load show first
 window.addEventListener("load",function () {
-tabContent.forEach(node =>{
-    node.style.display="none"
-    tabContent[0].style.display="block";
-})
-})
+    tabContents[0].classList.add('active');
+});
+
+
 
 
