@@ -3,6 +3,7 @@ let arrowRight =document.querySelector(".prev");
 let arrowLeft =  document.querySelector(".next");
 let current = 0;
 
+
 //hide all images
 function reset() {
     for(let i  = 0; i< sliderImgs.length;i++){
