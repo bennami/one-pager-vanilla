@@ -64,17 +64,13 @@
   background-image: url(../img/carousel3.jpg);
 }
 
-
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80vw;
   margin: 0 auto;
   padding: 2vw;
   background-color: #fefdf5;
 }
-
 main .sideImg {
   background-image: url(../img/coffee-grinding.jpg);
   background-position: center;
@@ -84,48 +80,40 @@ main .sideImg {
   height: 600px;
   margin-right: 2vw;
 }
-
 main .tabs-container {
   width: 60vw;
   height: auto;
   overflow: hidden;
   margin: 0;
 }
-
 main .tabs-container .tab-btn-row {
   border-bottom: 2px solid #c27a3a;
 }
-
 main .tabs-container .tab-btn-row .tab-btn {
   padding: 10px;
   border: none;
   background-color: transparent;
 }
-
 main .tabs-container .tab-btn-row .tab-btn a {
   display: block;
   font-size: 1rem;
   text-decoration: none;
   color: lightgrey;
 }
-
 main .tabs-container .tab-btn-row .btn-active {
   border-bottom: 6px solid #c27a3a;
 }
-
 main .tabs-container .tab-btn-row .btn-active a {
   color: #c27a3a;
 }
-
 main .tabs-container .tab-content h2 {
   font-size: 1.6rem;
   margin: 30px 0;
   color: #c27a3a;
 }
-
 main .tabs-container .tab-content p {
   font-size: 1rem;
   line-height: 1.5;
 }
-/*# sourceMappingURL=main.css.map */
 
+/*# sourceMappingURL=main.css.map */
