@@ -1,4 +1,5 @@
 # one-pager-vanilla
+[check it out!](https://bennami.github.io/one-pager-vanilla/)
 1 day challenge to make a landing page for an event
 
 HTML/CSS
